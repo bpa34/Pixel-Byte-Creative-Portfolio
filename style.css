@@ -3,3 +3,19 @@
     padding: 0;
     font-family: 'Video Pro', 'Roboto', sans-serif;
 }
+
+main {
+    top: 4rem;
+    position: relative;
+    width: 100%;
+    max-width: 1550px;
+    margin: auto;
+}
+
+header {
+    height: 4rem;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+}
+
