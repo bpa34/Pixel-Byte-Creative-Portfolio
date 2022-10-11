@@ -62,7 +62,64 @@ p {
         color: black;
  }
 
-/* main /* 
+/* Banner 1 */ 
+#first-banner {
+    display: flex;
+    height: 40rem;
+}
 
+
+#left-box {
+    width: 50%;
+    
+}
+
+#right-box {
+    width: 50%;
+    
+}
+
+#right-box img {
+    height: 60%;
+    width: 60%;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Banner 2 */ 
+#second-banner {
+    display: flex;
+    height: 40rem;
+}
+
+#projects-container {
+    width: 50%;
+}
+
+#skills-container {
+    width: 50%;
+    
+}
+
+.icon {
+    display: inline-block;
+}
+
+
+.icon img {
+    height: auto;
+    width: 50px;
+}
+
+
+/* footer */ 
+
+footer {
+text-align: center;
+}
 
 }
