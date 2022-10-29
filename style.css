@@ -18,10 +18,12 @@
 body {
   margin: 0;
   padding: 0 var(--spacing-3);
+  min-width: 600px;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  flex: none;
   }
 
 
@@ -31,6 +33,50 @@ h2 {
 
 p {
     letter-spacing: .5;
+    text-indent: 2rem;
+
+}
+
+.button {
+  background-color: #75AcF5;
+  border: 2px solid #000;
+  border-radius: 30px;
+  box-shadow: #a8a8a8 4px 4px 0 0;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: var(--spacing-1) 0;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+.container {
+    width: 50%;
+    
 }
 
 
@@ -70,19 +116,12 @@ p {
 /* Banner 1 */ 
 #first-banner {
     display: flex;
-    height: auto;
-}
-
-
-#left-box {
-    width: 50%;
+    height: 450px;
+    border-bottom: solid 1px lightgrey;
     
 }
 
-#right-box {
-    width: 50%;
-    
-}
+
 
 #right-box img {
     float: right;
@@ -99,15 +138,11 @@ p {
 #second-banner {
     display: flex;
     height: auto;
+    margin-top: var(--spacing-4);
 }
 
-#projects-container {
-    width: 50%;
-}
-
-#skills-container {
-    width: 50%;
-    
+#projects-container ul {
+    list-style-type: none;
 }
 
 .icon {
@@ -124,8 +159,9 @@ p {
 /* footer */ 
 
 footer {
-bottom: 0;
-position: fixed;
-width: 100%;
-}
 
+margin-top: auto;
+padding: var(--spacing-2) 0;
+text-align: center;
+
+}
