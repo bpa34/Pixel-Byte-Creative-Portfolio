@@ -1,7 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Video Pro', 'Roboto', sans-serif;
+    font-family: 'Video', 'Roboto', sans-serif;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
 }
 
 :root {
@@ -15,15 +20,17 @@
     --font-color: #323232;
   }
 
+
+
 body {
-  margin: 0;
-  padding: 0 var(--spacing-3);
-  min-width: 600px;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    background-color: #dbdbdb;
+    overflow: auto;
+    height: 100%;
   }
 
 
@@ -34,44 +41,22 @@ h2 {
 p {
     letter-spacing: .5;
     text-indent: 2rem;
-
+    font-family: "roboto";
 }
 
-.button {
-  background-color: #75AcF5;
-  border: 2px solid #000;
-  border-radius: 30px;
-  box-shadow: #a8a8a8 4px 4px 0 0;
-  color: black;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: var(--spacing-1) 0;
-}
 
-.button:hover {
-  background-color: #fff;
-}
 
-.button:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
-}
+.banner {
+        display: flex;
+        height: auto;
+        min-width: 600px;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 
-@media (min-width: 768px) {
-  .button {
-    min-width: 120px;
-    padding: 0 25px;
-  }
-}
 
 
 .container {
@@ -79,14 +64,24 @@ p {
     
 }
 
+.project{
+    cursor: pointer;
+}
 
  /* header */
-
+header {
+  width: 100%;
+  background-color: #282828;
+  
+}
 
  nav {
     display: flex;
     align-items: center;
-    padding: var(--spacing-3) 0;
+    padding: var(--spacing-3) var(--spacing-3);
+    margin: auto;
+    min-width: 600px;
+    max-width: 1200px;
  }
 
  #logo img{
@@ -110,39 +105,42 @@ p {
 
  nav a {
         text-decoration: none;
-        color: black;
+        color: white;
  }
 
+
+
+
+
 /* Banner 1 */ 
-#first-banner {
+
+
+
+
+#pic-container {
     display: flex;
-    height: 450px;
-    border-bottom: solid 1px lightgrey;
-    
+    justify-content: center;
 }
 
-
-
 #right-box img {
-    float: right;
     width: 300px;
     border-radius: 30px;
     flex-shrink: 0;
-    margin-left: var(--spacing-4);
+    
     
 }
 
 
 
 /* Banner 2 */ 
-#second-banner {
+
+.project {
     display: flex;
-    height: auto;
-    margin-top: var(--spacing-4);
 }
 
-#projects-container ul {
-    list-style-type: none;
+.project-image {
+    width: 50%;
+    border-radius: 15px;
 }
 
 .icon {
@@ -157,11 +155,13 @@ p {
 
 
 /* footer */ 
-
 footer {
-
-margin-top: auto;
-padding: var(--spacing-2) 0;
-text-align: center;
-
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    
+    
 }
+
