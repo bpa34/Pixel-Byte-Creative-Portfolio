@@ -34,6 +34,8 @@ body {
 }
 
 
+
+
 #page-container {
     position: relative;
     min-height: 100%;
@@ -131,8 +133,13 @@ nav a {
 
 /* Banner 1 */
 
-#section1 {
+#left-box {
     background-color: white;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: -2rem;
+    padding: 2rem;
 }
 
 
@@ -163,13 +170,15 @@ nav a {
 
 #banner2 {
     align-items: flex-start !important;
-
+    height: auto;
 }
 
 #projects-container {
     display: block;
     border-right: 1px solid #E8E9E8;
-
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #tile-container {
@@ -186,12 +195,12 @@ nav a {
 .project-tile {
     width: 45%;
     margin: 0 var(--spacing-3) var(--spacing-3) 0;
-    border-radius: 10px;
-    height: 50%;
+    border: 1px solid #dbdbdb;
+    height: 40%;
     transition-property: all;
     transition-duration: 0.40s;
     transition-timing-function: ease-in-out;
-
+    
 }
 
 .project-tile a:visited {
@@ -209,8 +218,6 @@ nav a {
     max-width: 100%;
     object-fit: contain;
     display: block;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     border-bottom: 1px solid #dbdbdb;
 }
 
@@ -220,9 +227,8 @@ nav a {
     flex-direction: column;
     flex-wrap: wrap;
     padding: var(--spacing-2) var(--spacing-3);
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    background-color: #E8E9E8;
+    
 
 
 }
@@ -231,6 +237,7 @@ nav a {
 #skills-container {
     padding-left: var(--spacing-3);
     width: 50%;
+    padding: 2rem;
 }
 
 #icon-container {
@@ -266,7 +273,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    position: fixed;
+    position: relative;
     display: flex;
     bottom: 0;
 }
@@ -310,11 +317,11 @@ footer {
 
 #contact h1 {
     font-size: 3rem;
+    margin-left: -2px;
 }
 
 #contact span {
     font-size: 1.2rem;
-    margin-left: 2px;
 }
 
 #email img {
