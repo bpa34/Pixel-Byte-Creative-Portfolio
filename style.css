@@ -169,7 +169,6 @@ nav a {
 
 
 #banner2 {
-    align-items: flex-start !important;
     height: auto;
 }
 
@@ -177,8 +176,13 @@ nav a {
     display: block;
     border-right: 1px solid #E8E9E8;
     padding: 2rem;
-    background-color: white;
+    background-color: #282828;
     border-radius: 10px;
+    z-index: 10;
+}
+
+#projects-container h2 {
+    color: white;
 }
 
 #tile-container {
@@ -195,10 +199,10 @@ nav a {
 .project-tile {
     width: 45%;
     margin: 0 var(--spacing-3) var(--spacing-3) 0;
-    border: 1px solid #dbdbdb;
+    border: 1px solid black;
     height: 40%;
     transition-property: all;
-    transition-duration: 0.40s;
+    transition-duration: 0.10s;
     transition-timing-function: ease-in-out;
     
 }
@@ -209,7 +213,7 @@ nav a {
 }
 
 .project-tile:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -235,9 +239,14 @@ nav a {
 
 /* right box */
 #skills-container {
-    padding-left: var(--spacing-3);
     width: 50%;
     padding: 2rem;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -2rem;
+    padding-left: 3rem;
+    
 }
 
 #icon-container {
