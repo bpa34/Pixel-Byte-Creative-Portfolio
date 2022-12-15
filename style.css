@@ -41,6 +41,8 @@ body {
     min-height: 100%;
 }
 
+main {}
+
 h2 {
     font-size: 2rem;
 }
@@ -204,7 +206,11 @@ nav a {
     transition-property: all;
     transition-duration: 0.10s;
     transition-timing-function: ease-in-out;
-    
+
+}
+
+.project-tile a {
+    color: black;
 }
 
 .project-tile a:visited {
@@ -232,7 +238,7 @@ nav a {
     flex-wrap: wrap;
     padding: var(--spacing-2) var(--spacing-3);
     background-color: #E8E9E8;
-    
+
 
 
 }
@@ -246,7 +252,7 @@ nav a {
     border-radius: 10px;
     margin-left: -2rem;
     padding-left: 3rem;
-    
+
 }
 
 #icon-container {
@@ -275,16 +281,17 @@ nav a {
 
 
 /* footer */
-footer {
+.footer-container {
     background-color: #282828;
     width: 100%;
     height: 6rem;
     align-items: center;
     justify-content: center;
-    margin-top: auto;
     position: relative;
     display: flex;
+    right: 0;
     bottom: 0;
+    left: 0;
 }
 
 #copyright {
@@ -295,15 +302,15 @@ footer {
 }
 
 
-/* Contact Page */ 
+/* Contact Page */
 
 #white-container {
     background-color: white;
     display: block;
-    min-width: 600px;
-    max-width: 1200px;
+    min-width: 550px;
+    max-width: 1150px;
     margin: auto;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: var(--spacing-4);
     height: 80vh;
 }
