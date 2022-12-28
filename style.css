@@ -314,6 +314,10 @@ a:active {
         display: none;
     }
 
+    html {
+        overflow: hidden;
+    }
+
     .banner {
         overflow: hidden;
     }
