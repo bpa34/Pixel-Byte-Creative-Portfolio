@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Video', 'Roboto', sans-serif;
+    font-family: 'video', 'Roboto', sans-serif;
 }
 
 html {
@@ -324,9 +324,9 @@ a:active {
         display: none;
     }
 
-    #skills,
-    #projects,
-    #about-me {
+    #skills-link,
+    #projects-link,
+    #about-me-link {
         display: none;
     }
 
@@ -437,7 +437,7 @@ a:active {
         transition-property: all;
         transition-duration: 0.10s;
         transition-timing-function: ease-in-out;
-        background-color: #E8E9E8;
+        
 
     }
 
@@ -559,7 +559,7 @@ a:active {
 
  }
 
- #contact h1 {
+ #contact-header h1 {
      font-size: 3rem;
      margin-left: -2px;
  }
@@ -590,6 +590,12 @@ a:active {
         height: 80vh;
     }
 
+    #logo img {
+        width: 18.75rem;
+        flex: 2 1 150px;
+        height: auto;
+    }
+
 }
 
 
@@ -618,7 +624,7 @@ a:active {
     }
 
     #logo img {
-        width: 225px;
+        width: 14rem;
         flex: 2 1 150px;
         height: auto;
     }
@@ -648,7 +654,7 @@ a:active {
         margin: auto;
         align-items: flex-start;
         padding: var(--spacing-4);
-        height: 81vh;
+        height: 82vh;
     }
 
     #footer-container {
