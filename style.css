@@ -450,10 +450,7 @@ a:active {
         text-decoration: none;
     }
 
-    .project-tile:hover {
-        transform: scale(1.05);
-        cursor: pointer;
-    }
+
 
 
     .tile-pic {
