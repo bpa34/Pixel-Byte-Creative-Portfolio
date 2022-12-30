@@ -538,7 +538,9 @@ a:active {
 
 
 /* Contact Page */
-
+#contact-page {
+    display: block;
+}
 
 #contact-icons {
     margin-top: var(--spacing-3);
@@ -558,7 +560,7 @@ a:active {
 
 #contact-header h1 {
     font-size: 3rem;
-    margin-left: -2px;
+    
 }
 
 #contact span {
@@ -570,7 +572,7 @@ a:active {
 }
 
 #color-picker-container h1,
-span {
+#wait {
     color: white;
 }
 
@@ -585,9 +587,6 @@ span {
         display: none;
     }
 
-    #contact-page {
-        display: block;
-    }
 
     .banner-contact {
         display: flex;
@@ -628,6 +627,13 @@ span {
         width: 18.75rem;
         flex: 2 1 150px;
         height: auto;
+    }
+
+    #colorcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     #color-button {
@@ -676,10 +682,14 @@ span {
         display: none;
     }
 
-    .banner {
+    #contact-page {
+        min-width: 300px;
+        max-width: 1200px;
         overflow: hidden;
+        width: 100%;
     }
 
+    
     header {
         width: 100%;
         background-color: #282828;
@@ -693,6 +703,7 @@ span {
         margin: auto;
         min-width: 300px;
         max-width: 1200px;
+        
     }
 
     #logo img {
@@ -709,6 +720,7 @@ span {
         align-items: center;
         margin: 0;
         margin-left: auto;
+        
     }
 
     .navigation-item {
@@ -724,20 +736,31 @@ span {
         display: flex;
         flex-direction: column;
         background-color: white;
-        width: 100%;
+        width: auto;
         padding: var(--spacing-4);
-        height: 15rem;
+        height: auto;
         justify-content: center;
+        align-items: center;
+        
     }
 
     #color-picker-container {
-        width: 100%;
+        width: auto;
         height: auto;
         background-color: #282828;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
+        
+    }
+
+    #colorcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     #color-button {
@@ -754,6 +777,7 @@ span {
         justify-content: center;
         align-items: center;
         margin-bottom: 2.5rem;
+        
     }
 
     #color-button:active {

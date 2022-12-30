@@ -65,15 +65,18 @@
                 </div>
             </div>
             <div id="color-picker-container">
-                <div id="color-picker-text-container">
-                    <h1>Color Picker</h1>
-                    <span>While you wait, pick a color!</span>
-                </div>
-                <button id="color-button" onclick="changeBackgroundColor();">Press me to get a color</button>
-                <div id="color-container">
+                <div id="colorcontent">
+                    <div id="color-picker-text-container">
+                        <h1>Color Picker</h1>
+                        <span id="wait">While you wait, pick a color!</span>
+                    </div>
 
-                    <p id="rgbCode"></p>
+                    <button id="color-button" onclick="changeBackgroundColor();">Press me to get a color</button>
+                    <div id="color-container">
 
+                        <p id="rgbCode"></p>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,7 +92,7 @@
 
     </footer>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js"></script> 
 </body>
 
 </html>
