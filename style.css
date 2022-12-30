@@ -53,7 +53,6 @@ h3 {
 
 p {
     letter-spacing: .5;
-    text-indent: 2rem;
     font-family: "roboto";
 }
 
@@ -64,6 +63,7 @@ span {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:active {
@@ -437,7 +437,7 @@ a:active {
         transition-property: all;
         transition-duration: 0.10s;
         transition-timing-function: ease-in-out;
-        
+
 
     }
 
@@ -523,12 +523,12 @@ a:active {
         bottom: 0;
         left: 0;
         height: 7rem;
+        z-index: 10;
     }
 
     #copyright {
         color: white;
         font-size: 12px;
-
     }
 
 }
@@ -537,37 +537,46 @@ a:active {
 
 
 
- /* Contact Page */
+/* Contact Page */
 
 
- #contact-icons {
-     margin-top: var(--spacing-3);
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: left;
-     align-items: center;
- }
+#contact-icons {
+    margin-top: var(--spacing-3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
 
- .contact-icon img {
-     height: auto;
-     width: 50px;
-     margin: 0 var(--spacing-3) var(--spacing-3) 0;
+.contact-icon img {
+    height: auto;
+    width: 50px;
+    margin: 0 var(--spacing-3) var(--spacing-3) 0;
 
- }
+}
 
- #contact-header h1 {
-     font-size: 3rem;
-     margin-left: -2px;
- }
+#contact-header h1 {
+    font-size: 3rem;
+    margin-left: -2px;
+}
 
- #contact span {
-     font-size: 1.2rem;
- }
+#contact span {
+    font-size: 1.2rem;
+}
 
- #email img {
-     width: 70px;
- }
+#email img {
+    width: 70px;
+}
+
+#color-picker-container h1,
+span {
+    color: white;
+}
+
+#color-picker-text-container {
+    padding: 1.5rem;
+}
 
 
 
@@ -576,15 +585,43 @@ a:active {
         display: none;
     }
 
-    #white-container {
-        background-color: white;
+    #contact-page {
         display: block;
-        min-width: 550px;
-        max-width: 1150px;
+    }
+
+    .banner-contact {
+        display: flex;
+        flex-direction: column;
+        min-width: 600px;
+        max-width: 1200px;
         margin: auto;
-        align-items: flex-start;
-        padding: var(--spacing-4);
-        height: 80vh;
+        width: 1200px;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+
+    #white-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: 20rem;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -2rem;
+    }
+
+    #color-picker-container {
+        width: 100%;
+        height: auto;
+        background-color: #282828;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     #logo img {
@@ -593,7 +630,31 @@ a:active {
         height: auto;
     }
 
+    #color-button{
+        width: 350px;
+        height: 100px;
+        border: none;
+        font-size: var(--spacing-3);
+        font-family: 'roboto';
+        background-color: white;
+        color: black;
+        display:flex;
+        border-radius: 10px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #color-container {
+        height: 20rem;
+        width: 40em;
+        background-color: white;
+        border-radius: 10px;
+        margin: 2rem 0 2.5rem 0;
+    }
+
 }
+
 
 
 @media only screen and (max-width: 949px) {
@@ -646,12 +707,19 @@ a:active {
     }
 
     #white-container {
+        display: flex;
+        flex-direction: column;
         background-color: white;
-        display: block;
-        margin: auto;
-        align-items: flex-start;
+        width: 100%;
         padding: var(--spacing-4);
-        height: 82vh;
+        height: 15rem;
+        justify-content: center;
+    }
+
+    #color-picker-container {
+        width: 100%;
+        height: 25rem;
+        background-color: #282828;
     }
 
     #footer-container {
