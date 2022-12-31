@@ -22,6 +22,8 @@ function generateColor() {
   return randomColor;
 };
 
+//These set of functions help change the RGB to Hex
+
 function valueToHex(c) {
   var hex = c.toString(16);
   return hex
@@ -35,6 +37,7 @@ function bgColor() {
   let color = "(" + rgbValues[0] + ", " + rgbValues[1] + ", " + rgbValues[2] + ")";
   return color
 }
+
 
 
 function changeBackgroundColor() {
