@@ -71,10 +71,15 @@
                         <span id="wait">While you wait, pick a color!</span>
                     </div>
 
-                    <button id="color-button" onclick="changeBackgroundColor();">Press me to get a color</button>
+                    <button id="color-button" onclick="changeBackgroundColor()">Press me to get a color</button>
                     <div id="color-container">
-
-                        <p id="rgbCode"></p>
+                        <div id="color-codes">
+                            <p>RGB Color Code:</p>
+                            <p id="rgbCode"></p>
+                            <br>
+                            <p>Hex Code:</p>
+                            <p id="hexCode"></p>
+                        </div>
 
                     </div>
                 </div>
@@ -92,7 +97,7 @@
 
     </footer>
     </div>
-    <script src="main.js"></script> 
+    <script src="main.js"></script>
 </body>
 
 </html>
